@@ -1,4 +1,4 @@
-# CrewCTF 2022 W
+# CrewCTF 2022 
 
 In this post I will give you the solutions for some of the challenges I solve during the 2-day ctf
 
