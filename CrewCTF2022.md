@@ -223,8 +223,7 @@ Let's try to calculate the same for 6:
 Wow. We got the same new_x for all three numbers. This is odd since this are 3 consecutive numbers. Here I started to suspect that this *new_x* is  the totient function since the number of digits is equals to the number of digits of n (both has 312 digits).
 So I tried to factorize it:
 > new_x = 2 * 2857 * 13687 * 17977 * 31663 * 32917 * 58207 * 71569 * 79337 * 83773 * 90971 * 134873 * 154933 * 163127^4 * 164377 * 187189 * 228539 * 230539 * 265129 * 267581 * 267601 * 358327 * 384907 * 409987 * 420361 * 440893 * 447263 * 477523 * 496063 * 505357^3 * 507499 * 541831 * 577427 * 582223 * 593407 * 641881 * 652039 * 689699 * 692387 * 704009 * 712171 * 749851 * 761869 * 765181 * 797281 * 806389 * 829319 * 866279 * 883577 * 919249 * 933403 * 939871 * 969911
-But this is kinda wrong since n % 8 == 5 so the totient function of n is divisible by 4 but new_x only divisible by 2. However, I still suspect that this number is only
-smaller than Φ(n) only a small number of times.
+But this is kinda wrong since n % 8 == 5 so the totient function of n is divisible by 4 but new_x only divisible by 2. However, I still suspect that this number is  smaller than Φ(n) only a small number of times.
 
 Start with this thought and the fact that Φ(n) is divisible by 4, I doubled new_x up and try to solve p and q. Luckily, my idea was right and we got p and q:
 > p = 4928360825890784253111612236014417888171491818338372279657244977120457455636085693749117643315398585668171611204641939707873722724850993393487100817165978583
