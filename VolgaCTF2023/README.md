@@ -1,0 +1,1 @@
+This challenge was an upsolve since I couldn't join the VolgaCTF 2023. This vulnerability was an UAF and we control the size of the allocated chunk. Thus using `seq_operation` was good for arbitrary read and write.
